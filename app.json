@@ -1,0 +1,17 @@
+{
+  "name": "UdaciFitnessReactNative",
+  "displayName": "UdaciFitnessReactNative",
+  "expo": {
+    "name": "UdaciFitnessReactNative",
+    "slug": "UdaciFitnessReactNative",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
