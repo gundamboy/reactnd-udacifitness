@@ -12,7 +12,8 @@ import EntryDetail from "./components/EntryDetail";
 import Live from "./components/Live";
 import {Platform} from "react-native-web";
 import {purple, white} from "./utils/colors";
-import { FontAwesome, Ionicons } from '@expo/vector-icons'
+import { FontAwesome, Ionicons } from '@expo/vector-icons';
+import { setLocalNotification } from "./utils/helpers";
 
 const Tab = createMaterialTopTabNavigator();
 
@@ -70,6 +71,10 @@ const MainNavigation = createStackNavigator();
 
 
 export default class App extends React.Component {
+    componentDidMount() {
+        setLocalNotification();
+    }
+
     render() {
         return (
             <Provider store={createStore(reducer)}>
